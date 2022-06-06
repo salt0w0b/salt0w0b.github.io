@@ -1,5 +1,11 @@
+<!--
+    評分項目：
+    (2)-1: 使用10種以上的html標籤：div, h1, h2, h3, h4, p, br, a, img, ul, li (以下共有11種)
+    (2)-2: 顯示2張圖片：在about me顯示github和LinkedIn的圖片連結，Github用相對路徑、LinkedIn用絕對路徑
+    (2)-3: 使用css特效，並以<link>連結：說明如下所示：
+-->
 <!DOCTYPE html>
-<html lang="">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -8,17 +14,33 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <title>About Me</title>
 </head>
+<!--
+    設置字體、行高、字和字的間距、背景顏色，及flex顯示方式
+-->
 
 <body>
-    
     <div class="resume">
-        
+        <!--在螢幕尺寸大於767px的情況下，會顯示為兩欄內容並於右上方放置飾條，若小於767px，則會以單欄顯示，隱藏飾條, line:1-12, 53-57-->
+        <!--剩餘設定內容是為使頁面在不同螢幕上能正確顯示,line:61-73,75-107-->
         <div class="left">
-            <a class="fill" href="index.html">click me to back</a>
-            <h1>About Me</h1>
             <h1>許佳硯 Yen Hsu</h1>
+            <br>
+            <!--縮小字體使其作為副標題, line:34-39-->
+            <h4>About Me</h4>
+            <!--在後方加上偽元素的裝飾, line:19-25-->
+            <h2>自我介紹</h2>
+            <p>Hi, 我是目前就讀於中央大學資管系一年級的學生，近期在朝著網頁安全和區塊鏈這兩個領域學習中，若想跟我聯絡，以下為聯絡方式：</p>
+            <div class="">
+                <br>
+                <a href="https://github.com/yen0224" target="_blank"><img src="GitHub.png" alt="Github" /></a>
+                <a class="" href="https://www.linkedin.com/in/yen-hsu-5070161b8" target="_blank"><img
+                        src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg"
+                        alt="LinkedIn" width="32px"></a>
+
+            </div>
             <h4>Diploma</h4>
             <h2> 學歷 </h2>
+            <!--此部分將ul, li條列方式更改，並在中間以不同顏色的色調做分隔, line:14-17,111-137-->
             <ul class="listExperience">
                 <li class="year">2020<br>
                     <ul>
@@ -33,40 +55,9 @@
                     </ul>
                 </li>
             </ul>
-            <div class="buttons">
-                <br>
-                <a class="btn" href="https://github.com/yen0224" target="_blank">Github</a>
-                <a class="btn" href="mailto:yen0224.work@pm.me" target="_blank">Email</a>
-                <a class="btn" href="https://www.linkedin.com/in/yen-hsu-5070161b8" target="_blank">LinkIn</a>
 
-            </div>
 
-            <div class="block">
-                <h4>Programming Skill</h4>
-                <h2>程式技能</h2>
-                <ul class="listProgram">
-                    <li>C++
-                        <div class="bar">
-                            <div class="value p80"></div>
-                        </div>
-                    <li>C
-                        <div class="bar">
-                            <div class="value p70"></div>
-                        </div>
-                    </li>
-                    </li>
-                    <li>Python
-                        <div class="bar">
-                            <div class="value p65"></div>
-                        </div>
-                    </li>
-                    <li>Html/Css/Js
-                        <div class="bar">
-                            <div class="value p30"></div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+
             <div class="block">
                 <h4>Works</h4>
                 <h2>工作經歷</h2>
@@ -76,6 +67,10 @@
                             <li>國立中央大學管理學院<br>計算機中心學生團隊</li>
                         </ul>
                     </li>
+                    <li class="year">2022
+                        <ul>
+                            <li>國立中央大學國際處<br>網管</li>
+                        </ul>
                 </ul>
             </div>
         </div>
@@ -86,7 +81,8 @@
                 <h2>社團、<br>社群參與</h2>
                 <ul class="listExperience">
                     <li>
-                        <h3>SITCON 學生計算機年會</h3></li>
+                        <h3>SITCON 學生計算機年會</h3>
+                    </li>
                     <li>2018<br>2019<br>2020
                         <ul><br>會眾</ul>
                     </li>
@@ -94,21 +90,22 @@
                         <ul>場務組 報到股 工人<br>Hour of Code 新竹場 助教</ul>
                     </li>
                     <li>2022
-                        <ul> 場務組防疫股股長、行政組組員</ul>
+                        <ul> 場務組防疫股股長</ul>
                     </li>
                 </ul>
                 <ul class="listExperience">
                     <br>
                     <li>
-                        <h3>GDSC Google Developers Students Club</h3></li>
-                    
+                        <h3>GDSC Google Developers Students Club</h3>
+                    </li>
+
                     <li class="year">2020<ul>GDSC NCUE - Club Member</ul>
                     </li>
                     <li class="year">2021<ul>GDSC NCU - Club Member</ul>
                     </li>
                 </ul>
-                    <br>
-                    <ul class="listExperience">
+                <br>
+                <ul class="listExperience">
                     <li>
                         <h3>HITCON 台灣駭客年會</h3>
                     <li>2021<ul>會眾</ul>
@@ -119,7 +116,7 @@
                         <h3>程式設計研究社</h3>
                     <li>2021<ul>社員</ul>
                     </li>
-                </li>
+                    </li>
                 </ul>
             </div>
 
