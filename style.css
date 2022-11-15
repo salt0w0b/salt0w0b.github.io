@@ -114,19 +114,22 @@ hr {
 
 }
 
-.listExperience>li:nth-child(1) ul {
+.listExperience li:nth-child(1) ul {
     border-color: #00428d
 }
 
-.listExperience>li:nth-child(2) ul {
+.listExperience li:nth-child(2) ul {
     border-color: #104fc5
 }
 
-.listExperience>li:nth-child(3) ul {
+.listExperience li:nth-child(3) ul {
     border-color: #3565be
 }
 
-.listExperience>li:nth-child(4) ul {
+.listExperience li:nth-child(4) ul {
+    border-color: #61a0e9
+}
+.listExperience li:nth-child(5) ul {
     border-color: #90b9e9
 }
 
